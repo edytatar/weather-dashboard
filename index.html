@@ -7,28 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/CSS/reset.css">
     <link rel="stylesheet" href="/Assets/CSS/style.css">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
 
 <body>
+
+
     <header>
         <h1>Weather Dashboard</h1>
     </header>
 
-    <section class="main-page">
-        <section class="search-components">
+    <section class="search-currently">
+        <aside class="search-components">
             <h2>Search for a City</h2>
-            <input type="text" placeholder="Chicago">
-            <button type="submit">Search</button>
+            <section class="input-button">
+                <input type="text" placeholder="Chicago">
+                <button type="submit">Search</button>
+            </section>
+        </aside>
+
+        <section class="currently-forecast-container">
+            <section class="currently-container">
+                <section class="currently-header">
+                    <span class="currently-header-content" id="city">Chicago</span>
+                    <span class="currently-header-content" id="icon">oo</span>
+                    <span class="currently-header-content" id="date"> 11/4/21</span>
+                </section>
+
+
+                <section class="currently-detail">
+                    <section class="currently-top-bottom-2">
+                        <h3>Temp: <span class="currently-forecast-h3" id="temp"></span></h3>
+                        <h3>Wind: <span class="currently-forecast-h3" id="wind"></span></h3>
+                    </section>
+
+                    <section class="currently-top-bottom-2">
+                        <h3>Humidity: <span class="currently-forecast-h3" id="humidity"></span></h3>
+                        <h3>UV Index: <span class="currently-forecast-h3" id="uv-index"></span></h3>
+                    </section>
+                </section>
+            </section>
+
+            <section class="forecast-container">
+                <h2 class="forecast-header-content">5 Day Forecast</h2>
+                
+            </section>
         </section>
-        <figure>
-            <img src="/Assets/Images/weather_gif.gif" alt="A cartoon sun and cloud smiling at eachother">
-        </figure>
-    </section>
     </section>
 
 
-    <script src="Assets/JavaScript/script.js"></script>;
+    <script src="Assets/JavaScript/script.js"></script>
 </body>
 
 </html>
