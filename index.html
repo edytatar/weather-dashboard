@@ -21,8 +21,8 @@
         <aside class="search-components">
             <h2>Search for a City</h2>
             <section class="input-button">
-                <input type="text" placeholder="Chicago">
-                <button type="submit">Search</button>
+                <input id="city" type="text" placeholder="Chicago">
+                <button id="get-weather" type="submit">Search</button>
             </section>
             <section class="history">
                 <h2 id="search-history">Search History</h2>
@@ -35,21 +35,21 @@
         <section class="currently-forecast-container">
             <section class="currently-container">
                 <section class="currently-header">
-                    <span class="currently-header-content" id="city">Chicago</span>
-                    <span class="currently-header-content" id="icon">oo</span>
-                    <span class="currently-header-content" id="date"> 11/4/21</span>
+                    <span class="currently-header-content" id="data-city"></span>
+                    <span class="currently-header-content" id="current-icon-span"></span>
+                    <span class="currently-header-content" id="date"></span>
                 </section>
 
 
                 <section class="currently-detail">
                     <section class="currently-top-bottom-2">
-                        <h3>Temp: <span class="currently-forecast-h3" id="temp"></span></h3>
-                        <h3>Wind: <span class="currently-forecast-h3" id="wind"></span></h3>
+                        <h3>Temp: <span id="temp"></span></h3>
+                        <h3>Wind: <span id="wind"></span></h3>
                     </section>
 
                     <section class="currently-top-bottom-2">
-                        <h3>Humidity: <span class="currently-forecast-h3" id="humidity"></span></h3>
-                        <h3>UV Index: <span class="currently-forecast-h3" id="uv-index"></span></h3>
+                        <h3>Humidity: <span id="humidity"></span></h3>
+                        <h3>UV Index: <span id="uv-index"></span></h3>
                     </section>
                 </section>
             </section>
@@ -57,45 +57,9 @@
             <section class="forecast-container">
                 <h2 class="forecast-header-content">5 Day Forecast</h2>
                 <section class="cards">
-                    <div class="card" id="1">
-                        <span class="currently-forecast-h3"></span>
-                        <div class="forecast-icon"></div>
-                        <h4>Temp: <span class="forecast-h4" id="forecast-temp"></span></h4>
-                        <h4>Wind: <span class="forecast-h4" id="forecast-wind"></span></h4>
-                        <h4>Humidity: <span class="forecast-h4" id="forecast-humidity"></span></h4>
-                    </div>
-
-                    <div class="card" id="2">
-                        <div class="forecast-icon"></div>
-                        <h4>Temp: <span class="forecast-h4" id="forecast-temp"></span></h4>
-                        <h4>Wind: <span class="forecast-h4" id="forecast-wind"></span></h4>
-                        <h4>Humidity: <span class="forecast-h4" id="forecast-humidity"></span></h4>
-                    </div>
-
-                    <div class="card" id="3">
-                        <div class="forecast-icon"></div>
-                        <h4>Temp: <span class="forecast-h4" id="forecast-temp"></span></h4>
-                        <h4>Wind: <span class="forecast-h4" id="forecast-wind"></span></h4>
-                        <h4>Humidity: <span class="forecast-h4" id="forecast-humidity"></span></h4>
-                    </div>
-
-                    <div class="card" id="4">
-                        <div class="forecast-icon"></div>
-                        <h4>Temp: <span class="forecast-h4" id="forecast-temp"></span></h4>
-                        <h4>Wind: <span class="forecast-h4" id="forecast-wind"></span></h4>
-                        <h4>Humidity: <span class="forecast-h4" id="forecast-humidity"></span></h4>
-                    </div>
-
-                    <div class="card" id="5">
-                        <div class="forecast-icon"></div>
-                        <h4>Temp: <span class="forecast-h4" id="forecast-temp"></span></h4>
-                        <h4>Wind: <span class="forecast-h4" id="forecast-wind"></span></h4>
-                        <h4>Humidity: <span class="forecast-h4" id="forecast-humidity"></span></h4>
-                    </div>
-
                 </section>
-
             </section>
+            
         </section>
     </section>
 
