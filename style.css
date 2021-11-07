@@ -151,9 +151,13 @@ button {
 }
 
 /* Styling for the weather detail text and span text to match */
-h3, .currently-forecast-h3 {
+h3  {
     font-size: 300%;
     font-weight: 400;
+}
+
+.currently-forecast-h3 {
+    font-size: 225%;
 }
 
 /* Styling the forecast container */
