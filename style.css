@@ -160,6 +160,22 @@ h3  {
     font-size: 225%;
 }
 
+/* Change span color */
+.uvGreen {
+    background-color: #30ffa9;
+    color: white;
+}
+
+.uvYellow {
+    background-color: #FFF930;
+    color: black;
+}
+
+.uvRed {
+    background-color: #FF636E;
+    color: white;
+}
+
 /* Styling the forecast container */
 .forecast-container {
     display: flex;
